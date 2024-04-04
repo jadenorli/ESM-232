@@ -124,7 +124,7 @@ compute_GDP_change = function( unemploy_change, slope=-1.8, intercept=3.2) {
 
 # now lets run the function to see what change in GDP is for 3% change in unemployment rate
 
-compute_GDP_change(3)
+compute_GDP_change(3) # would be good to define that this is a percent 
 
 # what if unemployment was even more sensitive
 compute_GDP_change(3, slope = -10)
@@ -190,7 +190,6 @@ Lists are used to return multiple values from functions
  
 # Sample data for Biodiversity Function
 ```{r}
-
 # get the function
 source("../R/compute_diversity.R")
 
@@ -200,6 +199,11 @@ flower_types = c("iris","daisy","poppy","rose","dandelion","weed","violet")
 # sample (with replacement)
 garden = sample(flower_types, size=20, replace=T)
 compute_diversity(garden)
+
+```
+```{r}
+#look at the summary
+summary(as.factor(garden))
 ```
  
  

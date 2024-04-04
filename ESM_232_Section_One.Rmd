@@ -5,9 +5,18 @@ date: "2024-04-02"
 output: html_document
 ---
 
+# Photovoltaic System Function
+$$
+\begin{align}
+E = ArHPR
+\end{align}
+$$
 
-
+## a) Function Formulation
 ```{r}
+# get the function
+source("/Users/jadenorli/Desktop/UCSB/Junior Year/Spring 2024/ESM 232/ESM_232/compute_energy.R")
 
+compute_energy(A = 20, H = 1000)
 ```
 
