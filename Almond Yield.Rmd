@@ -1,0 +1,12 @@
+---
+title: "Almond Yield"
+author: "Jaden Orli"
+date: "2024-04-05"
+output: html_document
+---
+
+
+```{r}
+climate_data <- read.delim("clim.txt")
+```
+
